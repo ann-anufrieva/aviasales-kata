@@ -1,0 +1,89 @@
+.filter-box {
+  background-color: white;
+  padding: 0 20px 0 20px ;
+  border-radius: 5px;
+  /* border: 1px solid #b4c2db; */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.10);
+  max-width: 232px;
+  height: 252px;
+}
+
+.filter-wrapper{
+  display: flex;
+  /* font-size: 13px; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.filter-wrapper p:first-child {
+  font-weight: 600;
+}
+
+.filter-wrapper label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox>input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox>span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-checkbox>span::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-left: 0.50px #9ABBCE solid; 
+  border-top: 0.50px #9ABBCE solid; 
+  border-right: 0.50px #9ABBCE solid; 
+  border-bottom: 0.50px #9ABBCE solid;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before {
+  border-color: #055bbd;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox>input:not(:disabled):active+span::before {
+  border-color: #2196F3;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox>input:focus+span::before {
+  border: 0 0 0 0.2rem rgba(150, 185, 223, 0.849);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox>input:focus:not(:checked)+span::before {
+  border-color: #3896fa;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox>input:checked+span::before {
+  background-image: url('./free-icon-check-1828649.png');
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox>input:disabled+span::before {
+  background-color: #e9ecef;
+}
+

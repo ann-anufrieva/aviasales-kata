@@ -1,0 +1,50 @@
+.buttons {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  margin-bottom: 20px;
+  max-width: 502px;
+  height: 50px;
+  position: relative;
+}
+
+.buttons_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttons_wrapper button:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.buttons_wrapper button:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+/* .btn_sort:hover,
+.btn_sort:focus {
+  background: #98d0ebf8;
+  color: white; 
+} */
+.btn_sort{
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 500;
+  background-color: white;
+  border: 0.50px #DFE5EC solid;
+  padding: 15px;
+  width: 168px;
+} 
+
+.btn_sort:active,
+.btn_sort:focus {
+  text-align: center; 
+  color: white; 
+  font-weight: 600; 
+  text-transform: uppercase; 
+  line-height: 20px; 
+  letter-spacing: 0.50px; 
+  word-wrap: break-word;
+  background: #2196F3;
+} 

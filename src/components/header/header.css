@@ -1,0 +1,21 @@
+.header {
+  /* height: 140px; */
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;;
+}
+
+.header__container span {
+  overflow: hidden;
+  position: relative;
+}
+
+.header__container img{
+  box-shadow: #b4c2db 10px 10px 20px;
+  border-radius: 50%;
+}
+
